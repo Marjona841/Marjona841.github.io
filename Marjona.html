@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///C:/Users/Talaba/Desktop/marjona.html -->
+<html lang="uz"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chotki Sayt</title>
+
+<link href="./marjona_files/css2" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: Poppins;
+    background: #f0f2f5;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(135deg, #ff00cc, #3333ff);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    position: sticky;
+    top: 0;
+}
+
+.banner h1 {
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 5px;
+}
+
+.banner p {
+    font-size: 24px;
+}
+
+/* Sections */
+.section {
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.section1 { background: linear-gradient(45deg, #ff9a9e, #fad0c4); }
+.section2 { background: linear-gradient(45deg, #a18cd1, #fbc2eb); }
+.section3 { background: linear-gradient(45deg, #84fab0, #8fd3f4); }
+.section4 { background: linear-gradient(45deg, #fccb90, #d57eeb); }
+
+/* Button */
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Search */
+input {
+    padding: 12px;
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.fonts p {
+    font-size: 22px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Banner -->
+<div class="banner">
+    <h1>XUSH KELIBSIZ</h1>
+    <p>Saytimizni ko'rishda davom eting</p>
+</div>
+
+<!-- 1 Brauzer -->
+<div class="section section1">
+    <h2>1) Brauzer</h2>
+    <input type="text" id="search" placeholder="Qidiruv yozing...">
+    <br>
+    <button onclick="search()">Qidirish</button>
+</div>
+
+<!-- 2 Link -->
+<div class="section section2">
+    <h2>2) Sayt linki</h2>
+    <button onclick="window.open(&#39;https://my.gov.uz&#39;)">
+        my.gov.uz ga o'tish
+    </button>
+</div>
+
+<!-- 3 Rasmlar -->
+<div class="section section3">
+    <h2>3) Rasmlar</h2>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="./marjona_files/574-300x200.jpg">
+            <p>Tabiat go‘zalligi</p>
+            <button onclick="alert(&#39;1-rasm&#39;)">Ko‘rish</button>
+        </div>
+
+        <div class="card">
+            <img src="./marjona_files/426-300x200.jpg">
+            <p>Shahar hayoti</p>
+            <button onclick="alert(&#39;2-rasm&#39;)">Ko‘rish</button>
+        </div>
+
+        <div class="card">
+            <img src="./marjona_files/140-300x200.jpg">
+            <p>Dengiz manzarasi</p>
+            <button onclick="alert(&#39;3-rasm&#39;)">Ko‘rish</button>
+        </div>
+
+        <div class="card">
+            <img src="./marjona_files/830-300x200.jpg">
+            <p>Tog‘lar</p>
+            <button onclick="alert(&#39;4-rasm&#39;)">Ko‘rish</button>
+        </div>
+
+        <div class="card">
+            <img src="./marjona_files/726-300x200.jpg">
+            <p>Quyosh botishi</p>
+            <button onclick="alert(&#39;5-rasm&#39;)">Ko‘rish</button>
+        </div>
+    </div>
+
+    <button onclick="alert(&#39;Rasmlar yuklandi&#39;)">Barchasini ko‘rish</button>
+</div>
+
+<!-- 4 Shriftlar -->
+<div class="section section4 fonts">
+    <h2>4) Shriftlar</h2>
+
+    <p style="font-family:Poppins;">Poppins</p>
+    <p style="font-family:Roboto;">Roboto</p>
+    <p style="font-family:Montserrat;">Montserrat</p>
+    <p style="font-family:&#39;Playfair Display&#39;;">Playfair Display</p>
+    <p style="font-family:Oswald;">Oswald</p>
+    <p style="font-family:Lobster;">Lobster</p>
+    <p style="font-family:Raleway;">Raleway</p>
+    <p style="font-family:Ubuntu;">Ubuntu</p>
+    <p style="font-family:Pacifico;">Pacifico</p>
+    <p style="font-family:Orbitron;">Orbitron</p>
+
+    <button onclick="alert(&#39;Shriftlar ishladi&#39;)">Tekshirish</button>
+</div>
+
+<script>
+function search() {
+    let q = document.getElementById("search").value;
+    window.open("https://www.google.com/search?q=" + q);
+}
+</script>
+
+
+</body></html>
